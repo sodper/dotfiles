@@ -1,2 +1,4 @@
+[user]
+	name = Per Flitig
 [include]
 	path = ~/.gitconfig.aliases
