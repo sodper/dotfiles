@@ -20,4 +20,6 @@
 	bdone = "!f() { git checkout ${1-develop} && git pp && git bclean ${1-develop}; }; f"
 	pushit = "!f() { git rev-parse --abbrev-ref HEAD | git push -u origin $1; }; f"
 	feat = "!f() { git checkout -b feature/$1; }; f"
-	bug = "!f() { git checkout -b bugfix/$1; }; f" 
+	bug = "!f() { git checkout -b bugfix/$1; }; f"
+	ec = config --global -e
+	lsa = !git config --list | grep ^alias | cut -c7-
