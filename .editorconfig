@@ -1,0 +1,25 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_size = 4
+indent_style = tab
+
+[*.{cs,vb}]
+trim_trailing_whitespace = true
+
+[*.{diff,md}]
+trim_trailing_whitespace = false
+
+[*.sln]
+indent_style = tab
+
+[*.{htm,html,js,ts,tsx,css,sass,scss,less,svg,vue}]
+indent_size = 2
+insert_final_newline = true
+
+[*.{json,json5}]
+indent_size = 2
+indent_style = space
