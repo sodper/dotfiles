@@ -18,6 +18,6 @@
 	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 	bclean = "!f() { git checkout ${1-develop} && git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs git branch -d; }; f"
 	bdone = "!f() { git checkout ${1-develop} && git pp && git bclean ${1-develop}; }; f"
-	pushit = !git rev-parse --abbrev-ref HEAD | git push -u origin
+	pushit = "!f() { git rev-parse --abbrev-ref HEAD | git push -u origin $1; }; f"
 	feat = "!f() { git checkout -b feature/$1; }; f"
 	bug = "!f() { git checkout -b bugfix/$1; }; f" 
