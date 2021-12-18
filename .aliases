@@ -7,3 +7,8 @@ alias ...="cd ../.."
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+
+# Git
+alias rebase="git rebase develop"
+alias merge="git mergetool"
+alias continue="get rebase --continue"

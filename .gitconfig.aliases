@@ -23,3 +23,4 @@
 	bug = "!f() { git checkout -b bugfix/$1; }; f"
 	ec = config --global -e
 	lsa = !git config --list | grep ^alias | cut -c7-
+	amend = commit --amend
